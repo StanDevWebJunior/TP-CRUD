@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PREMIER PAS SERVER NODE EXPRESS SQL</title>
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="content">
+            <div id="form"><span>GESTION DE STOCK</span></div>
+
+            <div id="contentForm">
+               
+               <div class = "form-als" id="form-produit">
+                <form action="" method="post">
+
+                    <fieldset>
+                        <legend>Ajoutez un Produit</legend>
+                        <!-- Titre du fieldset -->
+                        <div>
+    
+                            <input class="form" type="text" id="nom" name="nom" placeholder="Nom du produit" value="Manteau" required> </div>
+                        <div>
+                            <input class="form" type="number" id="prix" placeholder="Prix" value="150" required> </div>
+                        <div>
+                            <input class="form" type="number" id="id_marque" placeholder="id_Marque" value="3" required> </div>
+                        <div>
+                            <textarea class="form" type="textarea" id="description" placeholder="Description" maxlength="500" rows="3"></textarea>
+                        </div>
+
+                        <input class='sub' type="submit" id="btn-product-add" value="submit">
+                    </fieldset>
+                </form>
+                </div>
+
+                <!--            azertyuiioopppoiuytrtyuiytrtgyhgtrfdf-->
+                
+                <div class = "form-als">
+                <form action="" method="post">
+
+
+
+                    <fieldset>
+                        <legend>Ajouter une Marque</legend>
+                        <!-- Titre du fieldset -->
+
+                        <div>
+                            <input class="form" type="text" id="marque" name="marque" placeholder="Nom de la marque" value="NIKE" required>
+                        </div>
+
+                        <input class="sub" type="submit" id="btn-marque-add" value="submit">
+
+                    </fieldset>
+                </form>
+</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <i class="far fa-eye" id="affiche-produit">Display</i><i class="fas fa-edit" id="edit-produit">Edit</i><i class="fas fa-times" id="delete-produit">Delete</i>
+        <table id="tableau">
+            <tr>
+
+                 <th>ACTION</th>
+                <th>ID</th>
+                <th>ID_MARQUE</th>
+                <th>NOM_PRODUIT</th>
+                <th>PRIX</th>
+                <th>DESCRIPTION</th>
+            </tr>
+        </table>
+        
+        
+        
+       
+        <br>
+                      <i class="far fa-eye" id="affiche-marque">Display</i><i class="fas fa-edit" id="edit-marque">Edit</i><i class="fas fa-times" id="delete-produit">Delete</i>
+
+
+           <table id="tableau-marque">
+            <tr>
+
+               
+                <th>ACTION</th>
+                <th>ID</th>
+                <th>NOM_MARQUE</th>
+            
+            </tr>
+        </table>
+        </div>
+ 
+    <script src="index.js"></script>
+
+</body>
+
+</html>
